@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My sidebar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar transform">
+            <div class="logocon">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt="CSS"
+                    class="cssl">
+                <h1 class="csst">CSS</h1>
+            </div>
+            <hr class="divi1">
+            <button id="btn1" onclick="location.href='https://github.com/LomariPortfolio/'" type="button">Home</button>
+            <button id="btn2" onclick="location.href='https://github.com/LomariPortfolio/'" type="button">Projects</button>
+            <button id="btn3" onclick="location.href='https://github.com/LomariPortfolio/'" type="button">Gallery</button>
+            <button id="btn4" onclick="location.href='https://github.com/LomariPortfolio/'" type="button">Contact us</button>
+            <button id="btn5" onclick="location.href='https://github.com/LomariPortfolio/'" type="button">About us</button>
+            <hr class="divi2">
+            <div class="logoconn">
+                <div class="pfp">
+                    <img src="https://assets.stickpng.com/images/61d183263a856e0004c6334a.png" alt="amogus" class="amogus">
+                </div>
+                <h3 class="sus">Amogus</h3>
+            </div>
+        </div>
+        <div class="main">
+            <h1>PRESS THE BUTTON</h1>
+            <button id="sidebarToggle" onclick="slideIn()">Toggle Sidebar</button>
+        </div>
+    </div>
+    <script>
+        function slideIn() {
+            let sidebar = document.querySelector('.sidebar')
+            sidebar.classList.toggle('transform')
+        };
+    </script>
+</body>
+
+</html>
