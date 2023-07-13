@@ -36,10 +36,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 4em;
   gap: 1rem;
 }
-
+@media (max-width: 1080px) {
+  .sidebar {
+    flex: 3;
+  }
+}
 .sidebar.transform {
   flex: 0;
 }
@@ -47,7 +51,7 @@ body {
 #sidebarToggle {
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 1em 2em;
   border: none;
   cursor: pointer;
 }
@@ -87,8 +91,8 @@ button {
 #btn5 {
   background-color: #212529;
   color: #fff;
-  width: 90px;
-  height: 40px;
+  width: 8em;
+  height: 3em;
   border: 1px solid white;
   cursor: pointer;
   border-radius: 5px;
@@ -120,16 +124,16 @@ button {
 }
 
 .cssl {
-  width: 50px;
-  height: 50px;
+  width: 3.5em;
+  height: 3.5em;
   margin-top: 0;
-  margin-right: 20px;
+  margin-right: 1.5em;
 }
 
 .csst {
   color: white;
   margin: 0;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .divi2{
@@ -139,27 +143,37 @@ button {
   margin-top: 44vh;
   margin-bottom: 0;
 }
-
+@media (max-width: 1080px) {
+  .divi2 {
+    margin-top: 41.5vh;
+  }
+}
+@media (max-width: 380px) {
+  .divi2 {
+    margin-top: 25vh;
+  }
+}
 .logoconn{
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-right: 30px;
+  gap: 1em;
+  margin-right: 10%;
+  min-height: 2em;
 }
 .pfp{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55px;
-  height: 55px;
+  width: 3.5em;
+  height: 3.5em;
   border: 1px solid white;
   border-radius: 100%;
 }
 .amogus{
-  width: 50px;
-  height: 50px;
+  width: 3em;
+  height: 3em;
 }
 
 .sus{
